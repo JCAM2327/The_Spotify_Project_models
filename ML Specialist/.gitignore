@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data (muy pesada para Git)
+data/raw/*.csv
+data/processed/*.csv
+data/processed/*.parquet
+*.csv
+
+# Modelos entrenados
+models/*.pkl
+models/*.h5
+models/*.joblib
+
+# Reportes temporales
+reports/temp/
+*.log
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Excepciones (archivos pequeños que SÍ queremos versionar)
+!data/processed/.gitkeep
+!models/.gitkeep
+!reports/figures/.gitkeep
